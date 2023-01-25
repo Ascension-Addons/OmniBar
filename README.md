@@ -1,3 +1,3 @@
-# Addon Name
+# OmniBar
 
-This is the repository for <Addon Name>. Modified for Ascension.gg. 
+This is the repository for OmniBar. Modified for Ascension.gg. 
