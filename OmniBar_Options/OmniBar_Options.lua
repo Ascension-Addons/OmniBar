@@ -248,9 +248,9 @@ local function CreateSub(name)
 					if string.len(text) > 25 then
 						text = string.sub(text, 0, 22) .. "..."
 					end
-					text = CreateSquareTextureMarkup(icon, 20) .. " " .. text
+					text = CreateSquareTextureMarkup(icon, 22) .. " " .. text
 				else
-					text = CreateSquareTextureMarkup("Interface\\icons\\inv_misc_questionmark", 20) .. " " .. spellID
+					text = CreateSquareTextureMarkup("Interface\\icons\\inv_misc_questionmark", 22) .. " " .. spellID
 				end
 				_G["OmniBarOptionsPanel"..subIndex.."Item"..index.."Text"]:SetText(text)
 				

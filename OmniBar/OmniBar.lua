@@ -11,6 +11,166 @@ local specTable = {
 	[Enum.Class.HERO] = { "HERO" }
 }
 
+if not LOCALIZED_CLASS_SPEC_NAMES then -- remove when added to patches
+	LOCALIZED_CLASS_SPEC_NAMES = {
+		["DEATHKNIGHT"] = {
+			["BLOOD"]  = "Blood",
+			["FROST"]  = "Frost",
+			["UNHOLY"] = "Unholy",
+		},
+		["WARRIOR"]     = {
+			["ARMS"]       = "Arms",
+			["FURY"]       = "Fury",
+			["PROTECTION"] = "Protection"
+		},
+		["DRUID"]       = {
+			["BALANCE"]     = "Balance",
+			["FERAL"]       = "Feral",
+			["RESTORATION"] = "Restoration"
+		},
+		["PRIEST"]      = {
+			["DISCIPLINE"] = "Discipline",
+			["HOLY"]       = "Holy",
+			["SHADOW"]     = "Shadow"
+		},
+		["MAGE"]        = {
+			["ARCANE"] = "Arcane",
+			["FIRE"]   = "Fire",
+			["FROST"]  = "Frost"
+		},
+		["HUNTER"]      = {
+			["BEASTMASTERY"] = "Beast Mastery",
+			["MARKSMANSHIP"] = "Marksmanship",
+			["SURVIVAL"]     = "Survival"
+		},
+		["PALADIN"]     = {
+			["HOLY"]        = "Holy",
+			["PROTECTION"]  = "Protection",
+			["RETRIBUTION"] = "Retribution"
+		},
+		["ROGUE"]       = {
+			["ASSASSINATION"] = "Assassination",
+			["COMBAT"]        = "Combat",
+			["SUBTLETY"]      = "Subtlety"
+		},
+		["WARLOCK"]     = {
+			["AFFLICTION"]  = "Affliction",
+			["DEMONOLOGY"]  = "Demonology",
+			["DESTRUCTION"] = "Destruction",
+		},
+		["SHAMAN"]      = {
+			["ELEMENTAL"]   = "Elemental",
+			["ENHANCEMENT"] = "Enhancement",
+			["RESTORATION"] = "Restoration"
+		},
+		["BARBARIAN"] = {
+			["BRUTALITY"] = "Brutality",
+			["TACTICS"] = "Tactics",
+			["ANCESTRY"] = "Ancestry",
+		},
+		["WITCHDOCTOR"] = {
+			["VOODOO"] = "Voodoo",
+			["BREWING"] = "Brewing",
+			["SHADOWHUNTING"] = "Shadowhunting",
+		},
+		["DEMONHUNTER"] = {
+			["SLAYING"] = "Slaying",
+			["DEMONOLOGY"] = "Demonology",
+			["FELBLOOD"] = "Felblood",
+		},
+		["WITCHHUNTER"] = {
+			["INQUISITION"] = "Inquisition",
+			["DARKNESS"] = "Darkness",
+			["BOLTSLINGER"] = "Boltslinger",
+		},
+		["STORMBRINGER"] = {
+			["LIGHTNING"] = "Lightning",
+			["GIFTS"] = "Gifts",
+			["WIND"] = "Wind",
+		},
+		["FLESHWARDEN"] = {
+			["HELLFIRE"] = "Hellfire",
+			["WAR"] = "War",
+			["DEFIANCE"] = "Defiance",
+		},
+		["GUARDIAN"] = {
+			["GLADIATOR"] = "Gladiator",
+			["PROTECTION"] = "Protection",
+			["INSPIRATION"] = "Inspiration",
+		},
+		["MONK"] = {
+			["FIGHTING"] = "Fighting",
+			["RUNES"] = "Runes",
+			["DISCIPLINE"] = "Discipline",
+		},
+		["SONOFARUGAL"] = {
+			["BLOOD"] = "Blood",
+			["FEROCITY"] = "Ferocity",
+			["PACKLEADER"] = "Packleader",
+		},
+		["RANGER"] = {
+			["DUELING"] = "Dueling",
+			["ARCHERY"] = "Archery",
+			["SURVIVAL"] = "Survival",
+		},
+		["PROPHET"] = {
+			["STALKING"] = "Stalking",
+			["FORTITUDE"] = "Fortitude",
+			["VENOM"] = "Venom",
+		},
+		["PYROMANCER"] = {
+			["DESTRUCTION"] = "Destruction",
+			["INCINERATION"] = "Incineration",
+			["DRACONIC"] = "Draconic",
+		},
+		["CULTIST"] = {
+			["CORRUPTION"] = "Corruption",
+			["GODBLADE"] = "Godblade",
+			["INFLUENCE"] = "Influence",
+		},
+		["NECROMANCER"] = {
+			["RIME"] = "Rime",
+			["ANIMATION"] = "Animation",
+			["DEATH"] = "Death",
+		},
+		["SUNCLERIC"] = {
+			["BLESSINGS"] = "Blessings",
+			["SERAPHIM"] = "Seraphim",
+			["PIETY"] = "Piety",
+		},
+		["TINKER"] = {
+			["INVENTION"] = "Invention",
+			["MECHANICS"] = "Mechanics",
+			["FIREARMS"] = "Firearms",
+		},
+		["REAPER"] = {
+			["SOUL"] = "Soul",
+			["REAPING"] = "Reaping",
+			["DOMINATION"] = "Domination",
+		},
+		["WILDWALKER"] = {
+			["GEOMANCY"] = "Geomancy",
+			["PRIMAL"] = "Primal",
+			["LIFE"] = "Life",
+		},
+		["STARCALLER"] = {
+			["ASTRALWARFARE"] = "Astral Warfare",
+			["MOONBOW"] = "Moonbow",
+			["TIDES"] = "Tides",
+		},
+		["SPIRITMAGE"] = {
+			["RUNIC"] = "Runic",
+			["ARCANE"] = "Arcane",
+			["RIFTBLADE"] = "Riftblade",
+		},
+		["CHRONOMANCER"] = {
+			["DUALITY"] = "Duality",
+			["TIME"] = "Time",
+			["DISPLACEMENT"] = "Displacement",
+		},
+	}
+end
+
 for class, specs in pairs(LOCALIZED_CLASS_SPEC_NAMES) do
 	local classID = Enum.Class[class]
 	specTable[classID] = {}
@@ -1019,7 +1179,9 @@ function OmniBar_Position(self)
 		end)
 	else
 		-- if we aren't showing unused, just sort by added time
-		table.sort(self.active, function(a, b) return a.added == b.added and a.spellID < b.spellID or a.added < b.added end)
+		table.sort(self.active, function(a, b)
+			return a.added == b.added and a.spellID < b.spellID or a.added < b.added
+		end)
 	end
 
 	local count, rows = 0, 1
