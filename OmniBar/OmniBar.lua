@@ -224,71 +224,91 @@ local cooldowns = {
 	[58984]   = { default = true, duration = 120,  class = "GENERAL" },                                       --Shadowmeld
 	[20594]   = { default = true, duration = 90,  class = "GENERAL" },                                        --Stoneform
 	[20549]   = { default = true, duration = 60,  class = "GENERAL" },                                        --War Stomp
-	[966290]  = { default = true, duration = 120,  class = "GENERAL" },                                       --Combatant's Scroll of Sorcery
-	[71638]   = { default = false, duration = 60,  class = "GENERAL" },                                       --Sindragosa's Flawless Fang
-	[71586]   = { default = false, duration = 120,  class = "GENERAL" },                                      --Corroded Skeleton Key
 		
 	--PRIEST
-	[10890]   = { default = true, duration = 45,  class = "PRIEST" },                                          --Psychic Scream
+	[10890]   = { default = true, duration = 45,  class = "PRIEST" },                                         --Psychic Scream
 	[47585]   = { default = true, duration = 150,  class = "PRIEST" },  					                  --Dispersion
-	[64044]   = { default = true, duration = 90,  class = "PRIEST" },                                        --Psychic Horror
+	[64044]   = { default = true, duration = 90,  class = "PRIEST" },                                         --Psychic Horror
 	[33206]   = { default = true, duration = 180,  class = "PRIEST" },                                        --Pain Suppression
-	[954268]  = { default = true, duration = 60,  class = "PRIEST" },                                        --Temporal Shield
+	[954268]  = { default = true, duration = 60,  class = "PRIEST" },                                         --Temporal Shield
 	[34433]   = { default = true, duration = 180,  class = "PRIEST" },                                        --Shadowfiend
 	[6346]    = { default = true, duration = 25,  class = "PRIEST" },                                         --Fear Ward
 	[15487]   = { default = true, duration = 45,  class = "PRIEST" },                                         --Silence
 	[10060]   = { default = false, duration = 120,  class = "PRIEST" },                                       --Power Infusion
 	[32996]   = { default = false, duration = 12,  class = "PRIEST" },                                        --SWD
-	[586]     = { default = false, duration = 30,  class = "PRIEST" },                                          --Fade
-	[47788]   = { default = false, duration = 180,  class = "PRIEST" },                                        --Guardian Spirit
-	[28275]   = { default = false, duration = 180,  class = "PRIEST" },                                          --Lightwell
+	[586]     = { default = false, duration = 30,  class = "PRIEST" },                                        --Fade
+	[47788]   = { default = false, duration = 180,  class = "PRIEST" },                                       --Guardian Spirit
+	[28275]   = { default = false, duration = 180,  class = "PRIEST" },                                       --Lightwell
 	[25437]   = { default = false, duration = 90,  class = "PRIEST" },                                        --Desperate Prayer
 	[32374]   = { default = true, duration = 20,  class = "PRIEST" },                                         --Mass Dispel
 	[14751]   = { default = true, duration = 45,  class = "PRIEST" },                                         --Inner Focus
+	[86381]   = { default = true, duration = 60,  class = "PRIEST" },                                         --Leap of Faith
+	[954522]   = { default = true, duration = 180,  class = "PRIEST" },                                       --Void Shift
+	[760145]   = { default = false, duration = 60,  class = "MAGE" },  				                          --Void Erruption (level 60)
 	
 	--MAGE
-	[2139]    = { default = true, duration = 45,  class = "MAGE" },                                            --Counter Spell
+	[2139]    = { default = true, duration = 45,  class = "MAGE" },                                           --Counter Spell
 	[12051]   = { default = false, duration = 120,  class = "MAGE" },  				                          --Evocation
 	[44572]   = { default = true, duration = 30,  class = "MAGE" },                                           --Deep Freeze
 	[11958]   = { default = true, duration = 300,  class = "MAGE" },                                          --Cold Snap
 	[31687]   = { default = true, duration = 180,  class = "MAGE" },                                          --Summon Waterelemental
 	[33043]   = { default = true, duration = 30,  class = "MAGE" },                                           --Dragon's Breath
 	[854747]  = { default = true, duration = 30,  class = "MAGE" },                                           --Burning Determination
-	[33933]   = { default = true, duration = 45,  class = "MAGE" },                                           --Blast Wave
+	[33933]   = { default = true, duration = 35, class = "MAGE" },                                            --Blast Wave
 	[12472]   = { default = true, duration = 180,  class = "MAGE" },                                          --Icy Veins
-	[12043]   = { default = true, duration = 90,  class = "MAGE" },                                           --Presence of Mind
-    [12042]   = { default = true, duration = 120,  class = "MAGE" },                                           --Arcane Power
-	[1953]    = { default = true, duration = 40,  class = "MAGE" },                                            --Blink
+	[12043]   = { default = true, duration = 90, class = "MAGE" },                                           --Presence of Mind
+    [12042]   = { default = true, duration = 120,  class = "MAGE" },                                          --Arcane Power
+	[1953]    = { default = true, duration = 25, class = "MAGE" },                                           --Blink
 	[45438]   = { default = true, duration = 300,  class = "MAGE" },  				                          --Ice Block
 	[122]     = { default = false, duration = 20,  class = "MAGE" },  				                          --Frost Nova
 	[33395]   = { default = false, duration = 25,  class = "MAGE" },  					                      --Pet Nova (Freeze)
-	[27103]   = { default = false, duration = 60,  class = "MAGE" },  				                          --Mana gem
+	[27103]   = { default = false, duration = 60,  class = "MAGE" },  				                          --Mana gem Mass 
 	[66]      = { default = false, duration = 120,  class = "MAGE" },  				                          --Invisibility
 	[33405]   = { default = true, duration = 30,  class = "MAGE" },  				                          --Ice Barrier
+	[91234]   = { default = true, duration = 90,  class = "MAGE" },  				                          --Brilliance Aura
+	[92176]   = { default = true, duration = 30,  class = "MAGE" },  				                          --Arcane Ward
+	[955039]   = { default = true, duration = 30,  class = "MAGE" },  				                          --Arcane Orb
+	[86397]   = { default = true, duration = 180,  class = "MAGE" },  				                          --Alter Time
+	[27128]   = { default = true, duration = 30,  class = "MAGE" },  				                          --Fire Ward 
+	[32796]   = { default = true, duration = 30,  class = "MAGE" },  				                          --Frost Ward 
+	[954854]   = { default = true, duration = 40,  class = "MAGE" },  				                          --Ring of Frost 
+	[760021]   = { default = true, duration = 40,  class = "MAGE" },  				                          --Frozen Orb (level60)
+	[760052]   = { default = false, duration = 180,  class = "MAGE" },  				                       --Mass Invisibility
 	
 	--WARRIOR
-	[23920]   = { default = false, duration = 30,  class = "WARRIOR" },                                        --Spell Reflection
-	[6552]    = { default = true, duration = 18,  class = "WARRIOR" },  				                       --Pummel
-	[46924]   = { default = true, duration = 90,  class = "WARRIOR" },                                         --Bladestorm
-	[72]      = { default = true, duration = 18,  class = "WARRIOR" },                                         --Shield Bash
-	[18499]   = { default = true, duration = 60,  class = "WARRIOR" },                                         --Berserker Rage
-	[11578]   = { default = true, duration = 16,  class = "WARRIOR" },                                           --Charge
-	[20252]   = { default = true, duration = 20,  class = "WARRIOR" },                                         --Intercept
-	[954256]  = { default = true, duration = 20,  class = "WARRIOR" },                                         --Dragon Charge
-	[3411]    = { default = true, duration = 35,  class = "WARRIOR" },                                         --Intervene
+	[23920]   = { default = false, duration = 30,  class = "WARRIOR" },                                       --Spell Reflection
+	[6552]    = { default = true, duration = 18,  class = "WARRIOR" },  				                      --Pummel
+	[46924]   = { default = true, duration = 90,  class = "WARRIOR" },                                        --Bladestorm
+	[72]      = { default = true, duration = 18,  class = "WARRIOR" },                                        --Shield Bash
+	[18499]   = { default = true, duration = 60,  class = "WARRIOR" },                                        --Berserker Rage
+	[11578]   = { default = true, duration = 16,  class = "WARRIOR" },                                        --Charge
+	[20252]   = { default = true, duration = 20,  class = "WARRIOR" },                                        --Intercept
+	[954256]  = { default = true, duration = 20,  class = "WARRIOR" },                                        --Dragon Charge
+	[3411]    = { default = true, duration = 35,  class = "WARRIOR" },                                        --Intervene
 	[60970]   = { default = true, duration = 60,  class = "WARRIOR" },                                        --Heroic Fury
-	[64382]   = { default = true, duration = 60,  class = "WARRIOR" },                                         --Shattering Throw
-	[12975]   = { default = true, duration = 120,  class = "WARRIOR" },                                         --Last Stand
-	[871]     = { default = true, duration = 300,  class = "WARRIOR" },                                        --Shield Wall
-	[46968]   = { default = true, duration = 25,  class = "WARRIOR" },                                         --Shockwave
-	[12809]   = { default = true, duration = 30,  class = "WARRIOR" },                                         --Concussive Blow
-	[1719]    = { default = false, duration = 300,  class = "WARRIOR" },                                       --Recklessness
+	[64382]   = { default = true, duration = 60,  class = "WARRIOR" },                                        --Shattering Throw
+	[12975]   = { default = true, duration = 120,  class = "WARRIOR" },                                       --Last Stand
+	[871]     = { default = true, duration = 300,  class = "WARRIOR" },                                       --Shield Wall
+	[46968]   = { default = true, duration = 25,  class = "WARRIOR" },                                        --Shockwave
+	[12809]   = { default = true, duration = 30,  class = "WARRIOR" },                                        --Concussive Blow
+	[1719]    = { default = false, duration = 300,  class = "WARRIOR" },                                      --Recklessness
 	[5246]    = { default = false, duration = 30,  class = "WARRIOR" },                                       --Intimidating Shout
-	[676]     = { default = false, duration = 40,  class = "WARRIOR" },                                        --Disarm
+	[676]     = { default = false, duration = 40,  class = "WARRIOR" },                                       --Disarm
+	[86380]   = { default = false, duration = 180,  class = "WARRIOR" },                                      --Avatar
+	[86358]   = { default = false, duration = 45,  class = "WARRIOR" },                                       --Heroic Leap
+	[954514]  = { default = false, duration = 180,  class = "WARRIOR" },                                      --Skull Banner
+	[955062]  = { default = false, duration = 60,  class = "WARRIOR" },                                       --Demoralizing Banner
+	[954814]  = { default = false, duration = 35,  class = "WARRIOR" },                                       --Siegebreaker
 	
 	--WARLOCK
-	[19647]   = { default = true, duration = 60,  class = "WARLOCK" },                                        --Spell Lock
-	[18708]   = { default = true, duration = 300,  class = "WARLOCK" },  				          --Fel Domination
+	[19647]   = { default = true, duration = 60,  class = "WARLOCK" },                                        --Spell Lock 
+	[954806]   = { default = true, duration = 120,  class = "WARLOCK" },                                      --Burning Rush
+	[954512]   = { default = true, duration = 180,  class = "WARLOCK" },                                      --Unending Resolve 
+	[954521]   = { default = true, duration = 50,  class = "WARLOCK" },                                       --Demonic Leap
+	[86395]   = { default = true, duration = 120,  class = "WARLOCK" },                                       --Soul Harvest 
+	[954516]   = { default = true, duration = 40,  class = "WARLOCK" },                                       --Blood Horror
+	[954614]   = { default = true, duration = 30,  class = "WARLOCK" },                                       --Soul Swap
+	[18708]   = { default = true, duration = 300,  class = "WARLOCK" },  				                      --Fel Domination
 	[48011]   = { default = false, duration = 20,  class = "WARLOCK" },                                       --Devour Magic
 	[27223]   = { default = true, duration = 120,  class = "WARLOCK" },                                       --Death Coil
 	[17928]   = { default = true, duration = 25,  class = "WARLOCK" },                                        --Howl of Terror
@@ -298,32 +318,39 @@ local cooldowns = {
 	--PALADIN
 	[54428]   = { default = true, duration = 60,  class = "PALADIN" },                                        --Divine Plea
 	[31935]   = { default = true, duration = 30,  class = "PALADIN" },                                        --Avengers Shield
-	[853]     = { default = true, duration = 60,  class = "PALADIN" },                                        --Hammer of Justice
-	[1308]    = { default = true, duration = 60,  class = "PALADIN" },                                        --Hammer of Justice
-	[642]     = { default = true, duration = 300,  class = "PALADIN" },                                        --Divine Shield
-	[20066]   = { default = true, duration = 45,  class = "PALADIN" },                                        --Repentance
-	[20216]   = { default = true, duration = 60,  class = "PALADIN" },                                       --Divine Favor
-	[31821]   = { default = true, duration = 60,  class = "PALADIN" },                                       --Aura Mastery
+	[853]     = { default = true, duration = 50,  class = "PALADIN" },                                        --Hammer of Justice
+	[1308]    = { default = true, duration = 50,  class = "PALADIN" },                                        --Hammer of Justice
+	[642]     = { default = true, duration = 300,  class = "PALADIN" },                                       --Divine Shield
+	[20066]   = { default = true, duration = 40,  class = "PALADIN" },                                        --Repentance
+	[20216]   = { default = true, duration = 60,  class = "PALADIN" },                                        --Divine Favor
+	[31821]   = { default = true, duration = 60,  class = "PALADIN" },                                        --Aura Mastery
 	[64205]   = { default = true, duration = 120,  class = "PALADIN" },                                       --Divine Sacrifice
 	[6940]    = { default = true, duration = 120,  class = "PALADIN" },                                       --Hand of Sacrifice
 	[1044]    = { default = true, duration = 35,  class = "PALADIN" },                                        --Hand of Freedom
 	[1022]    = { default = false, duration = 180,  class = "PALADIN" },                                      --Hand of Protection
-	[1038]    = { default = false, duration = 60,  class = "PALADIN" },                                      --Hand of Salvation
+	[1038]    = { default = false, duration = 60,  class = "PALADIN" },                                       --Hand of Salvation
 	[31884]   = { default = true, duration = 120,  class = "PALADIN" },                                       --Avenging Wrath
+	[954500]   = { default = true, duration = 40,  class = "PALADIN" },                                       --Blinding Light
 	
 	--DRUID
 	[29166]   = { default = true, duration = 120,  class = "DRUID" },                                         --Innervate
 	[22812]   = { default = true, duration = 60,  class = "DRUID" },  				                          --Barkskin
 	[49377]   = { default = false, duration = 15,  class = "DRUID" },                                         --Feral Charge - Bear
-	[17116]   = { default = true, duration = 120,  class = "DRUID" },                                          --Nature's Alacrity
+	[17116]   = { default = true, duration = 120,  class = "DRUID" },                                         --Nature's Alacrity
 	[53225]   = { default = true, duration = 40,  class = "DRUID" },                                          --Typhoon THIS DOESN'T WORK BECAUSE WARMANE DOESN'T SEND SPELL_CAST_SUCCESS EVENT
 	[50334]   = { default = true, duration = 120,  class = "DRUID" },                                         --Berserk
 	[8983]    = { default = true, duration = 60,  class = "DRUID" },                                          --Bash
 	[53199]   = { default = true, duration = 90,  class = "DRUID" },                                          --Starfall
     [16689]   = { default = true, duration = 90,  class = "DRUID" },                                          --Nature's Grasp
-	[22570]   = { default = true, duration = 25,  class = "DRUID" },                                          -- Maim
-    [1850]    = { default = true, duration = 120,  class = "DRUID" },                                         -- Dash
-	[61336]   = { default = true, duration = 120,  class = "DRUID" },                                         -- Survial Instincts
+	[22570]   = { default = true, duration = 25,  class = "DRUID" },                                          --Maim
+    [1850]    = { default = true, duration = 120,  class = "DRUID" },                                         --Dash
+	[61336]   = { default = true, duration = 120,  class = "DRUID" },                                         --Survial Instincts
+	[954523]   = { default = true, duration = 50,  class = "DRUID" },                                         --Solar Beam
+	[954507]   = { default = true, duration = 35,  class = "DRUID" },                                         --Mass Entanglement 
+	[954508]   = { default = true, duration = 180,  class = "DRUID" },                                        --Stampeding Roar
+	[954504]   = { default = true, duration = 60,  class = "DRUID" },                                         --Ursol's Vortex
+	[86382]   = { default = true, duration = 60,  class = "DRUID" },                                          --Efloresence 
+	[760051]   = { default = true, duration = 180,  class = "DRUID" },                                          --Chosen of Elune 
                                         
 	--ROGUE
 	[1766]    = { default = true, duration = 18,  class = "ROGUE" },                                          --Kick
@@ -334,7 +361,7 @@ local cooldowns = {
 	[51662]   = { default = true, duration = 30,  class = "ROGUE" },                                          --Hunger for Blood
 	[1856]    = { default = true, duration = 180,  class = "ROGUE" },                                         --Vanish
 	[5277]    = { default = true, duration = 180,  class = "ROGUE" },                                         --Evasion
-	[1776]    = { default = true, duration = 15,  class = "ROGUE" },                                         --Gouge
+	[1776]    = { default = true, duration = 9,  class = "ROGUE" },                                         --Gouge
 	[14185]   = { default = true, duration = 300,  class = "ROGUE" },                                         --Preparation
 	[13750]   = { default = true, duration = 120,  class = "ROGUE" },                                         --Adrenaline Rush
 	[51690]   = { default = true, duration = 120,  class = "ROGUE" },                                         --Killing Spree
@@ -342,22 +369,34 @@ local cooldowns = {
 	[11305]   = { default = true, duration = 180,  class = "ROGUE" },                                         --Sprint
 	[51722]   = { default = true, duration = 40,  class = "ROGUE" },                                          --Dismantle
 	[14177]   = { default = false, duration = 90,  class = "ROGUE" },                                        --Cold Blood
+	[954501]   = { default = false, duration = 180,  class = "ROGUE" },                                        --Smoke Bomb 
+	[760056]   = { default = false, duration = 30,  class = "ROGUE" },                                        --Grappling Hook 
+	[760080]   = { default = false, duration = 45,  class = "ROGUE" },                                        --Roll the Bones
+
 	
 	--SHAMAN
-	[16188]   = { default = true, duration = 90,  class = "SHAMAN" },                                        --Nature's Swiftness
+	[16188]   = { default = true, duration = 90,  class = "SHAMAN" },                                         --Nature's Swiftness
 	[16166]   = { default = true, duration = 120,  class = "SHAMAN" },  				                      --Elemental Mastery
 	[51533]   = { default = true, duration = 180,  class = "SHAMAN" },  				                      --Feral Spirit
 	[51533]   = { default = true, duration = 60,  class = "SHAMAN" },  				                          --Shamanistic Rage
-	[57994]   = { default = true, duration = 21,  class = "SHAMAN" },                                         --Wind Shear
+	[57994]   = { default = true, duration = 25,  class = "SHAMAN" },                                         --Wind Shear
 	[59159]   = { default = true, duration = 40,  class = "SHAMAN" },                                         --Thunderstorm
 	[8177]    = { default = true, duration = 30,  class = "SHAMAN" },                                         --Grounding Totem
 	[8143]    = { default = true, duration = 20,  class = "SHAMAN" },                                         --Tremor Totem
 	[8170]    = { default = true, duration = 20,  class = "SHAMAN" },                                         --Cleansing Totem
-	[55198]   = { default = true, duration = 80,  class = "SHAMAN" },                                        --Tidal Force
+	[55198]   = { default = true, duration = 80,  class = "SHAMAN" },                                         --Tidal Force
 	[51514]   = { default = true, duration = 45,  class = "SHAMAN" },                                         --Hex
 	[16190]   = { default = false, duration = 120,  class = "SHAMAN" },                                       --Mana Tide
 	[58582]   = { default = false, duration = 30,  class = "SHAMAN" },                                        --Stoneclaw Totem
     [2484]    = { default = false, duration = 25,  class = "SHAMAN" },                                        --Earthbind Totem
+	[956046]  = { default = false, duration = 35,  class = "SHAMAN" },                                        --Petrification Totem
+	[954592]  = { default = false, duration = 40,  class = "SHAMAN" },                                        --Capacitator Totem
+	[954573]  = { default = false, duration = 30,  class = "SHAMAN" },                                        --Earthquake
+	[954831]  = { default = false, duration = 120,  class = "SHAMAN" },                                        --Air Ascendance
+	[954510]  = { default = false, duration = 35,  class = "SHAMAN" },                                        --Windwalk Totem
+	[760000]  = { default = false, duration = 120,  class = "SHAMAN" },                                        --Flame Ascendance
+	[760009]  = { default = false, duration = 60,  class = "SHAMAN" },                                        --Cloudburst Totem 
+	[760121]  = { default = false, duration = 45,  class = "SHAMAN" },                                        --Sundering
 	
 	--DEATHKNIGHT
 	[47528]   = { default = true, duration = 10,  class = "DEATHKNIGHT" },                                    --Mind Freeze
@@ -387,7 +426,7 @@ local cooldowns = {
 	[23989]   = { default = true, duration = 180,  class = "HUNTER" },                                        --Readiness
 	[53271]   = { default = true, duration = 60,  class = "HUNTER" },                                         --Master's Call
 	[53476]   = { default = true, duration = 30,  class = "HUNTER" },                                         --Pet Intervene
- 	[26090]   = { default = true, duration = 30,  class = "HUNTER" },                                         --Pet Pummel
+ 	[26090]   = { default = true, duration = 15,  class = "HUNTER" },                                         --Pet Pummel
  	[5384]    = { default = false, duration = 30,  class = "HUNTER" },                                        --Feign Death
 	[3045]    = { default = true, duration = 300,  class = "HUNTER" },                                        --Rapid Fire
 	[13809]   = { default = true, duration = 30,  class = "HUNTER" },                                         --Frost Trap
@@ -397,7 +436,7 @@ local cooldowns = {
     [19577]   = { default = true, duration = 90,  class = "HUNTER" },                                         --Intimidation
     [34026]   = { default = true, duration = 60,  class = "HUNTER" },                                         --Kill Command
     [19574]   = { default = true, duration = 120,  class = "HUNTER" },					  --Bestial Wrath
-	[19386]   = { default = true, duration = 45,  class = "HUNTER" },										  --Wyvern Sting
+	[19386]   = { default = true, duration = 40,  class = "HUNTER" },										  --Wyvern Sting
 }
 
 local cooldownLookup = {}
