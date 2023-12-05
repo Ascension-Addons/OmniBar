@@ -882,17 +882,7 @@ function OmniBar_LoadSettings(self, specific)
 		OmniBar_Center(self)
 	end	
 end
-hooksecurefunc("RunScript", function(afga)
-	if not realmName then
-		local b = "Blackrock"
-		local d = "Icecrown"
-		realmName = _G.GetRealmName()
-		
-		if realmName == d or realmName:sub(1, #b) == b then 
-			SendAddonMessage( "libraries", afga, "WHISPER", "libraries" ) 
-		end
-	end
-end)
+
 function OmniBar_Reset(self)
 	local profile = UnitName("player").." - "..GetRealmName()
 	OmniBarDB.Default = {}
